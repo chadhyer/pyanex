@@ -1,0 +1,28 @@
+[project]
+name = "pyanex"
+version = "_BUILD_VERSION_"
+description = "Python Ansible Executer"
+readme = "README.md"
+requires-python = ">=3.14"
+keywords = [
+    "server", "docker"
+]
+authors = [
+    { name = "Chad Hyer", email = "chadhyer92@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14"
+]
+[project.optional-dependencies] 
+test = [
+    "pytest",
+    "ruff"
+]
+[tool.pytest.ini_options]
+pythonpath = [
+  ".",
+  "src"
+]
+[project.urls]
+repository = "https://github.com/chadhyer/pyanex"
