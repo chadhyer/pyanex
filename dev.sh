@@ -8,7 +8,7 @@ fi
 docker run --rm -it \
     --name $i-dev \
     --env-file ./default.env \
-    --user "${USERID:-1001}:${GROUPID:-$USERID}" \
+    --user "${USERID:-1000}:${GROUPID:-$USERID}" \
     --entrypoint /bin/bash \
     $i:${tag}
 

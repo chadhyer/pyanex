@@ -3,9 +3,9 @@ FROM python:3.14.3-alpine3.23
 # Create User
 ENV APP_DIR=/usr/local/app
 RUN addgroup \
-        -g 1001 -S app \
+        -g 1000 -S app \
     && adduser \
-        -u 1001 \
+        -u 1000 \
         -s /usr/local/bin/python3.14 \
         -h /usr/local \
         -S app -G app
